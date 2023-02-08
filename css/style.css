@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    width: 485px;
+    height: 280px;
+    background-color: hsl(217, 19%, 24%);
+    margin: auto;
+    border-radius: 16px;
+    padding: 40px 40px 30px;
+    font-family: 'Manrope', sans-serif;
+    box-shadow: 35px 35px 100px hsl(217, 19%, 12%);
+}
+
+.advice {
+    color: hsl(150, 100%, 66%);
+    font-size: medium;
+}
+
+.text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    margin: 30px 15px 30px;
+}
+
+.randomizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(150, 100%, 66%);
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    margin: auto;
+    top: 350px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.randomizer img {
+    margin: 0 auto;
+}
+
+.randomizer:hover {
+    box-shadow: 0 0 20px 5px hsla(150, 100%, 66%, 0.5);
+}
+
+.divider {
+    background-image: url(../images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 20%;
+}
+
+@media (max-width: 475px){
+    .rectangle{
+        width: 270px;
+        padding: 25px 25px 0px;
+    }
+
+    .text{
+        margin: 10px 0px 10px;
+        font-size: 24px;
+    }
+
+    .randomizer {
+        top: 305px;
+    }
+
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
